@@ -9,7 +9,7 @@ function App() {
   console.log(token);
 
   useEffect(() => {
-    if (token) {
+    if (!token) {
       setLoggedIn(true);
     }
   }, [loggedIn, token]);
